@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+   font-family: 'Josefin Sans', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.9)), url(pexels-ankur-bagai-6440428.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.logo{
+    color: 	#FF1493
+}
+
+.city{
+    color: 		#FF1493
+}
+nav{
+    width :100%;
+    height: 15vh;
+    background: rgba(0,0,0,0.2);
+    color:white;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    text-transform: uppercase;
+    }
+
+nav .logo{
+    width: 28%;
+    text-align: center;
+    font-weight: bold;
+    }
+
+nav .menu{
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav .menu a{
+    text-decoration: none;
+    color: white;
+    font-weight:bold;
+}
+
+.main{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center; 
+    color: white;
+}
+
+section h3{
+    font-size: 35px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-shadow: 3px 3px 6px black;
+}
+section h2{
+    font-size: 35px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-shadow: 3px 3px 6px black;
+    margin-top: 250px;
+    margin-bottom: 10px;
+}
+
+section h1{
+    margin: 50px 0px 50px 0px;
+    font-size: 55px;
+    font-weight: 900;
+    text-shadow: 4px 2px 10px black;
+    text-transform: uppercase;
+}
+
+section a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    outline: none;
+    text-shadow: 4px 2px 10px black;
+    transition: all 0.5s ease-in-out;
+   
+}
+
+section .btone{
+    background: #fff;
+    color: #000;
+}
+
+section .bttwo{
+    background: #00b899;
+    color: #fff;
+    margin-left: 10px;
+}
+
+nav .menu a:first-child{
+    color:#00b899
+}
+
+nav .menu a:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+    color:	#AA336A;
+
+}
+
+.animate__animated.animate__heartBeat {
+    --animate-duration: 4s;
+  }
+
+.change_content:after{
+  content: '';
+  animation: changetext 10s infinite linear; 
+  color:#00b899
+}
+
+@keyframes changetext {
+    0%{content:" Hawa Mahal";}
+    20%{content:" Jantar Mantar";}
+    40%{content:" Nahargarh Fort";}
+    60%{content:" Amer Fort";}
+    80%{content:" Albert Hall";}
+    100%{content:" Birla Mandir";}
+    
+}
+
+.btone:hover{
+    background:	#AA336A;;
+    color: #fff;
+}
+.bttwo:hover{
+    background: 	#AA336A;
+    color: #fff;
+}
+
+
+.row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+  
+}
+.col{
+flex-basis: 33%;
+width: 200px;
+height:230px;
+display: inline-block;
+border-radius: 10px;
+box-sizing: border-box;
+cursor: pointer;
+margin: 10px 15px;
+background-image: url(rsz_cover_jantar_mantar_jaipur.png);
+background-position: center;
+background-size: cover;
+transition: transform 0.5s;
+}
+
+.col1{
+    background-image: url(rsz_cover_jantar_mantar_jaipur.png);
+    color: white;
+    font-size: 25px;
+    font-weight: 900;
+    text-shadow: 4px 2px 10px black;
+    text-align: center;
+    padding-top: 10px;
+    
+}
+.col2{
+    background-image: url(Rajasthan-scaled.png);
+    color: white;
+    font-size: 25px;
+    font-weight: 900;
+    text-shadow: 4px 2px 10px black;
+    text-align: center;
+    padding-top: 10px;
+}
+.col3{
+    background-image: url(amer.jpg);
+    color: white;
+    font-size: 25px;
+    font-weight: 900;
+    text-shadow: 4px 2px 10px black;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.col:hover{
+    transform:translateY(-10px)
+}
+
+#im1{ animation: changeBg1 15s infinite ;width:200px; height:230px;}
+@keyframes changeBg1{
+   0%,100%  {background-image: url("rsz_cover_jantar_mantar_jaipur.png");}
+   33% {background-image: url("hm.jpg");}
+   66% {background-image: url("ah.jpg");}
+   
+}
+.col1:after{
+    content: '';
+    animation: changetext1 15s infinite linear; 
+    color:white
+  }
+  
+  @keyframes changetext1 {
+      0% ,100%{content:" Jantar Mantar";}
+      33%{content:" Hawa Mahal";}
+      66%{content:" Albert Hall";}
+     
+      
+  }
+
+  #im2{ animation: changeBg2 15s infinite ;width:200px; height:230px;}
+@keyframes changeBg2{
+   0%,100%  {background-image: url("Rajasthan-scaled.png");}
+   33% {background-image: url("jg.jpg");}
+   66% {background-image: url("jm..jpg");}
+   
+}
+.col2:after{
+    content: '';
+    animation: changetext2 15s infinite linear; 
+    color:white
+  }
+  
+  @keyframes changetext2 {
+      0% ,100%{content:"Nahargarh Fort";}
+      33%{content:" Jaigarh Fort";}
+      66%{content:" Jal Mahal";}
+     
+      
+  }
+
+  #im3{ animation: changeBg3 15s infinite ;width:200px; height:230px;}
+  @keyframes changeBg3{
+     0%,100%  {background-image: url("amer.jpg");}
+     33% {background-image: url("bm.jpg");}
+     66% {background-image: url("cp.jpg");}
+     
+  }
+  .col3:after{
+      content: '';
+      animation: changetext3 15s infinite linear; 
+      color:white
+    }
+    
+    @keyframes changetext3 {
+        0% ,100%{content:"Amer Fort";}
+        33%{content:"Birla Mandir";}
+        66%{content:"City Palace";}
+       
+        
+    }
+
+.gallery
+{
+    background-color: #bd6649;
+    margin: none;
+
+}
+.row2{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    
+        
+    }
+.colt{
+    flex-basis: 50%;
+    width: 640px;
+    height:480px;
+    display: inline-block;
+    border-radius: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+  
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+    }   
+
+    .gly h2{
+        font-size: 35px;
+        font-weight: 400;
+        letter-spacing: 3px;
+        text-shadow: 3px 3px 6px black;
+    
+       text-align: center;
+       padding-top: 30px;
+       color: white;
+    
+    }
+
+.col4{
+    margin-left: 50px;
+}
+
+
+
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px;
+    resize: vertical 
+  }
+  
+
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+
+  .contact {
+ 
+    background-color: #bd6649;
+    padding: 20px;
+  }
+
+  .contact h2{
+    font-size: 35px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-shadow: 3px 3px 6px black;
+    text-align: center;
+   padding-top: 30px;
+   color: white;
+   padding-bottom: 30px;
+
+}
+
+@media only screen and (max-width :420px){
+    nav{
+        display: none;
+    }
+}
